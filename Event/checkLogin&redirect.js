@@ -18,7 +18,7 @@ function redirectAdmin() {
         element.setAttribute('action','index.html')
 
     } else {
-        alert("sai roi")
+        alert("Sai rồi")
     }
 }
 

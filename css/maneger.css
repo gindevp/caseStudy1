@@ -12,7 +12,6 @@ body {
 body{
     background-image: url("../img/background.jpg");
     background-size: cover;
-    font-family: "Permanent Marker";
     font-size: 24px;
     font-style: normal;
     font-variant: normal;
@@ -32,6 +31,12 @@ body{
 .container1{
     text-align: center;
 }
+.btn{
 
+}
+
+td {
+    color: white;
+}
 
 
