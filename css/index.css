@@ -21,6 +21,15 @@ body {
 .container1{
     text-align: center;
 }
+.card :hover {
+    text-shadow: 2px 7px 13px rgba(138, 8, 104, 0.27);
+    box-shadow: 5px 7px 13px rgba(138, 20, 104, 20);
+}
+.card {
+    background-color: rgba(138, 8, 104, 0.32);
+
+}
+
 
 
 

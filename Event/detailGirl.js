@@ -1,9 +1,10 @@
 function detailGirl(id){
-    document.getElentById('name').innerHTML= arr[id].name
-    document.getElentById('age').value= arr[id].age
-    document.getElentById('img').value= arr[id].images
-    document.getElentById('sex').checked= arr[id].sex
-    document.getElentById('address').value= arr[id].address
-    document.getElentById('phone').value= arr[id].phone
-    document.getElentById('hobbies').value= arr[id].hobbies
+    console.log(id)
+    console.log(arr[id].name)
+    document.getElementById('detailName').innerHTML= `<span>${arr[id].name}</span>`
+    document.getElementById('detailAge').innerHTML= `<p>${arr[id].age}</p>`
+    document.getElementById('detailImages').innerHTML= `<p><img src='${arr[id].images}'></p>`
+    document.getElementById('detailAddRess').innerHTML= `<span>${arr[id].address}</span>`
+    document.getElementById('detailPhone').innerHTML= `<span>${arr[id].phone}</span>`
+    document.getElementById('detailHobbies').innerHTML= `<p>${arr[id].hobbies}</p>`
 }

@@ -11,7 +11,7 @@ function addGirl(){
         name: iteamName ,
         age: itemAge,
         images: itemImages,
-        addRess: itemAddRess ,
+        address: itemAddRess ,
         phone: itemPhone ,
         hobbies: itemHobbies
     }
@@ -37,6 +37,7 @@ function clear(){
     document.getElementById('hobbies').value=""
 }
 function deleteGirl(id){
+    console.log()
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].id == id) {
             arr.splice(i, 1);

@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Permanent+Marker"/>
     <link rel="stylesheet" href="../css/index.css">
 
+
 </head>
 <body>
 <main>
@@ -61,45 +62,29 @@
 
         </header>
     </div>
-    <div class="container">
+    <div class="container" >
+        <p id="detailImages"></p>
         <div class="mb-3 mt-3">
-            <label for="name" class="form-label" >Name:</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+            <label>Name:</label>
+            <p id="detailName"></p>
         </div>
         <div class="mb-3">
-            <label for="age" class="form-label">Age</label>
-            <input type="number" class="form-control" id="age" placeholder="Enter age" name="age">
+            <label >Age</label>
+            <p id="detailAge"></p>
         </div>
-        <label>Images</label>
-        <div class="custom-file">
-            <input type="file" id="file_upload " required>
-        </div>
-        <br>
-        <label>Gender</label>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="sex" id="male" value="1" checked>
-            <label class="form-check-label" for="male">
-                Male
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="sex" id="female" value="0">
-            <label class="form-check-label" for="female">
-                Female
-            </label>
 
-        </div>
-        <br>
+        <label>Gender</label>
+        <p id="gender"></p>
         <div class="mb-3">
-            <label for="addRess" class="form-label">AddRess</label>
-            <input type="text" class="form-control" id="addRess" placeholder="Enter addRess" name="addRess">
+            <label class="form-label">AddRess</label>
+            <p id="detailAddRess"></p>
         </div>
         <div class="mb-3">
-            <label for="phone" class="form-label">Phone</label>
-            <input type="number" class="form-control" id="phone" placeholder="Enter phone" name="phone">
+            <label class="form-label">Phone</label>
+            <p id="detailPhone"></p>
         </div>
-        <label for="hobbies">Hobbies </label>
-        <textarea class="form-control" rows="5" id="hobbies" name="text" placeholder="Hobbies"></textarea>
+        <label>Hobbies </label>
+        <p id="detailHobbies"></p>
     <footer>
         <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"></div>
         <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"></div>
@@ -137,4 +122,5 @@
     </footer>
 </body>
 </html>
+<script src="../Event/index.js"></script>
 <script src="../Event/detailGirl.js"></script>
