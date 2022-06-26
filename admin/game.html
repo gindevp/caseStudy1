@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="icon" href="../img/admin.jpg">
+    <canvas></canvas>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/game.css">
 
+</head>
+<body >
+<div>
+    <a type="button" href="index.html" class="btn btn-dark" style="top:20px;left: 20px;position: absolute"> < back to web </a>
+    <h1 style="top:282px;left: 820px;position: absolute">Do You Love Me</h1>
+    <input class="btn btn-success" style="top: 355px;left: 825px;position: absolute;" onclick="YesIdo()" id="OK" type="button" value="Yes" onmouseout="Yes()">
+    <input class="btn btn-danger" onmouseout="YesDo()" onclick="YesIdo()" onmouseover="notNo()" id="notNo" style="top: 355px;left: 1050px;position: absolute" type="button" value="No">
+</div>
 </body>
 </html>
+<script src="../Event/game.js"></script>
+<script src="../Event/swal.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
