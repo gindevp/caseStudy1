@@ -1,4 +1,6 @@
-var anonimouId;
+var anonimouId=-1;
+var temp=0;
+var index;
 function editGirl(id){
     console.log("edit id:" +id)
 
@@ -11,6 +13,7 @@ function editGirl(id){
             document.getElementById("addRess").value = arr[i].address;
             document.getElementById("phone").value = arr[i].phone;
             document.getElementById("hobbies").value = arr[i].hobbies;
+            temp++;
         }
     }
 }
@@ -22,6 +25,7 @@ function addGirl(){
     let itemPhone = document.getElementById('phone').value
     let itemHobbies = document.getElementById('hobbies').value
     let item;
+
     item={
         id: anonimouId,
         name: itemName ,
@@ -31,14 +35,17 @@ function addGirl(){
         phone: itemPhone ,
         hobbies: itemHobbies
     }
-    let index = arr.findIndex((c) => c.id == item.id)
+    if(temp>0){
+        index = arr.findIndex((c) => c.id == item.id)
+    }else {index=-1; }
+
     console.log(item.id)
     console.log("index" + index)
     if (index >= 0) {
         console.log(" edit thanh cong index:"+index)
         arr.splice(index, 1, item)
     } else {
-        item.id= (arr.length+1)
+        item.id= (500+arr.length+1)
         item.images= "/img/"+item.images+".jpg"
         console.log("add thanh cong")
         console.log("item"+item);
@@ -49,6 +56,7 @@ function addGirl(){
     clear()
 }
 function clear(){
+    anonimouId=''
     document.getElementById('name').value=""
     document.getElementById('age').value=""
     document.getElementById("images").value=""

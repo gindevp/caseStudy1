@@ -17,7 +17,7 @@ function renderList() {
                        
 &nbsp;
 <div class="card-text">
-<a id="redirectDetail" onclick="detailGirl(arr[i].id)" class="btn btn-danger" style=";font-size: 30px;width: 100%; height: 50px"><span>Detail</span></a>
+<a id="redirectDetail" href="../admin/detail.html" onclick="window.localStorage.setItem('keyID',${arr[i].id}-1)" class="btn btn-danger" style=";font-size: 30px;width: 100%; height: 50px"><span>Detail</span></a>
 </div>
 </div>
 </div>
