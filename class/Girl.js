@@ -17,6 +17,7 @@ class Girl {
         this.hobbies = hobbies;
     }
 
+
 }
 let girl1= new Girl(1,"Nhi",19,"../img/i1.jpg","Ha noi","0919010101", "Music, game");
 console.log(girl1)

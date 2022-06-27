@@ -1,8 +1,9 @@
-var anonimouId=-1;
-var temp=0;
+var anonimouId = -1;
+var temp = 0;
 var index;
-function editGirl(id){
-    console.log("edit id:" +id)
+
+function editGirl(id) {
+    console.log("edit id:" + id)
 
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].id == id) {
@@ -15,61 +16,69 @@ function editGirl(id){
             document.getElementById("hobbies").value = arr[i].hobbies;
             temp++;
         }
+
     }
 }
-function addGirl(){
+
+function addGirl() {
     let itemName = document.getElementById('name').value
     let itemAge = Number(document.getElementById('age').value)
-    let itemImages=document.getElementById("images").value
+    let itemImages = document.getElementById("images").value
     let itemAddRess = document.getElementById('addRess').value
     let itemPhone = document.getElementById('phone').value
     let itemHobbies = document.getElementById('hobbies').value
     let item;
 
-    item={
+    item = {
         id: anonimouId,
-        name: itemName ,
+        name: itemName,
         age: itemAge,
         images: itemImages,
-        address: itemAddRess ,
-        phone: itemPhone ,
+        address: itemAddRess,
+        phone: itemPhone,
         hobbies: itemHobbies
     }
-    if(temp>0){
+    if (temp > 0) {
         index = arr.findIndex((c) => c.id == item.id)
-    }else {index=-1; }
-
+    } else {
+        index = -1;
+    }
     console.log(item.id)
     console.log("index" + index)
     if (index >= 0) {
-        console.log(" edit thanh cong index:"+index)
+        console.log(" edit thanh cong index:" + index)
         arr.splice(index, 1, item)
     } else {
-        item.id= (500+arr.length+1)
-        item.images= "/img/"+item.images+".jpg"
+        item.id = (500 + arr.length + 1)
+        item.images = "/img/" + item.images + ".jpg"
         console.log("add thanh cong")
-        console.log("item"+item);
-        arr.push(item);
+        console.log("item" + item);
+        ;
+        localStorage.removeItem("keyArr")
+        localStorage.setItem("keyArr",arr.push(item))
     }
     console.log(arr)
     render()
     clear()
 }
-function clear(){
-    anonimouId=''
-    document.getElementById('name').value=""
-    document.getElementById('age').value=""
-    document.getElementById("images").value=""
-    document.getElementById('addRess').value=""
-    document.getElementById('phone').value=""
-    document.getElementById('hobbies').value=""
+
+function clear() {
+    anonimouId = ''
+    document.getElementById('name').value = ""
+    document.getElementById('age').value = ""
+    document.getElementById("images").value = ""
+    document.getElementById('addRess').value = ""
+    document.getElementById('phone').value = ""
+    document.getElementById('hobbies').value = ""
 }
-function deleteGirl(id){
-    console.log("delete"+id)
+
+function deleteGirl(id) {
+    console.log("delete" + id)
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].id == id) {
             arr.splice(i, 1);
             render();
         }
 
-    }}
+    }
+}

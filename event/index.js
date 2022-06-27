@@ -207,6 +207,7 @@ const arr=[
 
 
 ]
+localStorage.setItem("keyArr",arr)
 console.log(arr)
 
 
