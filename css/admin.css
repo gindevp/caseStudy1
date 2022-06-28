@@ -1,23 +1,13 @@
-body {
-    font-family: "Permanent Marker";
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 26.4px;
 
+body{
+    font-family: "Permanent Marker";
     /*background-image: url("../img/background.jpg");*/
     /*background-size: cover;*/
-}
-body{
-    background-image: url("../img/background.jpg");
-    background-size: cover;
     font-size: 24px;
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
     line-height: 26.4px;
-    color: #ffffff;
 }
 .py-3 {
     padding-top: 0rem!important;
@@ -35,8 +25,5 @@ body{
 
 }
 
-td {
-    color: white;
-}
 
 

@@ -7,7 +7,7 @@ function renderList() {
         <div class="col-3" >
         <div class="card" style="margin-bottom: 20px; ">
         <div>
-        <img class=" card-img-top" src="${arr[i].images}"
+        <img class=" card-img-top" src="${arr[i].images}"  
         width="200px"
         height="450px"
         alt="img">

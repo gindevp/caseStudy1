@@ -2,7 +2,7 @@
 const arr=[
     {
         id:1,
-        name: "linh",
+        name: "Ngo Hieu",
         age: 20,
         images: "/img/i1.jpg",
         // sex: 1,
@@ -11,7 +11,7 @@ const arr=[
         hobbies: "game, music",
     },
     {   id:2,
-        name: "minh",
+        name: "Manh hien",
         age: 22,
         images: "/img/i2.jpg",
         // sex: 1,
@@ -21,7 +21,7 @@ const arr=[
 
     },
     {   id:3,
-        name: "minh",
+        name: "Van Hang",
         age: 23,
         images: "/img/i3.jpg",
         // sex: 1,
